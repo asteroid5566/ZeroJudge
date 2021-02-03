@@ -16,15 +16,7 @@ int main()
 				power++;
 			}
 			
-			if (power > 1){
-				if (first == true){
-					cout << i << "^" << power;
-					first = false; 
-				}
-				else
-					cout << " * " << i << "^" << power;
-			}
-			else{
+			if (power == 1){
 				if (first == true){
 					cout << i;
 					first = false;
@@ -32,11 +24,16 @@ int main()
 				else
 					cout << " * " << i;
 			}
-			i++;
+			else{
+				if (first == true){
+					cout << i << "^" << power;
+					first = false; 
+				}
+				else
+					cout << " * " << i << "^" << power;
+			}
 		}
-		else{
-			i++;
-		}
+		i++;
 	}
 	return 0;
 }
