@@ -25,13 +25,13 @@ int main()
 	else if(str[0] == 'Z'){
 		temp = 33;
 	}
-	else if(str[0] <= 'H'){			//A ~ H
+	else if(str[0] <= 'H'){				//A ~ H
 		temp = str[0] - 'A' + 10;
 	}
-	else if(str[0] <= 'N'){			//J ~ N
+	else if(str[0] <= 'N'){				//J ~ N
 		temp = str[0] - 'J' + 18;
 	}
-	else{							//P ~ V
+	else{								//P ~ V
 		temp = str[0] - 'P' + 23;
 	}
 

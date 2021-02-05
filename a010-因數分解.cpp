@@ -6,6 +6,7 @@ int main()
 	bool first = true;
 	int i = 2, n, power;
 	cin >> n;
+	
 	while (n > 1){
 		if (n % i == 0){
 			n /= i;
