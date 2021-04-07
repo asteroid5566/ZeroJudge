@@ -11,11 +11,8 @@ int main()
 		cin >> a >> b;
 		sum = 0;
 		for (i = sqrt(a) - 1; i <= sqrt(b) + 1; i++) {
-			if (i * i > b)
-				break;
-			if (sqrt(i * i) == i && (i * i >= a && i * i <= b)) {
+			if (i * i >= a && i * i <= b)
 				sum += i * i;
-			}
 		}
 		cout << "Case " << S++ << ": " << sum << endl;
 	}
