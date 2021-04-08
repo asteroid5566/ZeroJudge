@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-	int k, a, b, c, count, sum = 0, maxSum = 0, caseFlag, flag;		//caseflag = 0 ¬°¤p¼g
+	int k, a, b, c, count, sum = 0, maxSum = 0, caseFlag, flag;		//lower case: caseflag = 0
 	string str;
 	cin >> k >> str;
 	
