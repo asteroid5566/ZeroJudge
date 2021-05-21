@@ -34,16 +34,13 @@ int main()
 				cout << arr[i][j];
 		}
 		
-		count++;
-		if (count == 2) {
+		if (++count == 2) {
 			count = 0;
 			move++;
-		}	
-		dir++;
-		if (dir == 4)
+		}
+		if (++dir == 4)
 			dir = 0;
 	}
-	
 	cout << endl;
 	return 0;
 }
