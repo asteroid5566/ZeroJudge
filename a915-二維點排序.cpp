@@ -9,10 +9,7 @@ struct Data {
 
 bool cmp(Data a, Data b)
 {
-	if (a.x == b.x)
-		return a.y < b.y;
-	else
-		return a.x < b.x;
+	return a.x == b.x ? a.y < b.y : a.x < b.x;
 }
 
 int main()
