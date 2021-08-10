@@ -11,9 +11,8 @@ int main()
 		cin >> x >> a >> b;
 		for (i = 0; i <= x / a; i++) {
 			for (j = 0; j <= x / b; j++) {
-				if (i * a + j * b == x && i + j < min) {
+				if (i * a + j * b == x && i + j < min)
 					min = i + j;
-				}
 			}
 		}
 		if (min == 999999)
