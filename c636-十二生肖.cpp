@@ -5,12 +5,16 @@ using namespace std;
 int main()
 {
 	int n;
-	string arr[12] = {"½Ş", "¹«", "¤û", "ªê", "¨ß", "Às", "³D", "°¨", "¦Ï", "µU", "Âû", "ª¯"},
-		arr2[12] = {"¹«", "½Ş", "ª¯", "Âû", "µU", "¦Ï", "°¨", "³D", "Às", "¨ß", "ªê", "¤û"};
+	
+	// I use DEVC++ to write this program, if you use different IDE may encounter chinese encoding problem
+	// If the words are garbled, please replace them with correct chinese words
+	
+	string arr[12] = {"½Ş", "¹«", "¤û", "ªê", "¨ß", "Às", "³D", "°¨", "¦Ï", "µU", "Âû", "ª¯"},          // from pig to dog
+		arr2[12] = {"¹«", "½Ş", "ª¯", "Âû", "µU", "¦Ï", "°¨", "³D", "Às", "¨ß", "ªê", "¤û"};            // reverse order, from mouse back to ox
+
 	while (cin >> n) {
-		if (n >= 1) {
+		if (n >= 1)
 			cout << arr[n % 12] << endl;
-		}
 		else {
 			n = -n;
 			cout << arr2[n % 12] << endl;
