@@ -1,3 +1,4 @@
+// https://zerojudge.tw/ShowProblem?problemid=a271
 #include <iostream>
 using namespace std;
 
@@ -5,17 +6,17 @@ int main()
 {
 	ios::sync_with_stdio(false);
 	string str;
-	int N, x, y, z, w, n, m, i, posion;
+	int N, x, y, z, w, n, m, i, poison;
 	cin >> N;
 	while (N--) {
-		posion = 0;
+		poison = 0;
 		cin >> x >> y >> z >> w >> n >> m;
 		cin.ignore();
 		getline(cin, str);
 		
 		for (i = 0; i < str.size(); i++) {
 			if (str[i] >= '0' && str[i] <= '4') {
-				m -= posion;
+				m -= poison;
 				if (m <= 0) {
 					cout << "bye~Rabbit\n";
 					break;
@@ -33,7 +34,7 @@ int main()
 						break;
 					case '4':
 						m -= w;
-						posion += n;
+						poison += n;
 				}
 				
 				if (m <= 0) {
