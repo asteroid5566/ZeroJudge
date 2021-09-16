@@ -1,4 +1,4 @@
-// https://zerojudge.tw/Submissions?problemid=a001&account=asteroid5566
+// https://zerojudge.tw/ShowProblem?problemid=a001
 #include <iostream>
 using namespace std;
 
