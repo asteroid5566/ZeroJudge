@@ -1,40 +1,39 @@
+// https://zerojudge.tw/ShowProblem?problemid=a040
 #include <iostream>
 using namespace std;
 
 int main()
 {
-	int n, m, current, temp, digit, sum, exist = 0;
+	int n, m, i, current, temp, digit, sum, exist = 0;
 	cin >> n >> m;
 	
-	for (int i = n; i <= m; i++){
+	for (i = n; i <= m; i++) {
 		current = i;
 		digit = 0;
 		sum = 0;
 		
-		while (current > 0){
+		while (current > 0) {
 			current /= 10;
 			digit++;
 		}
 		
 		current = i;
-		for (int j = 0; j < digit; j++){
+		for (int j = 0; j < digit; j++) {
 			temp = 1;
-			for (int k = 0; k < digit; k++){
+			for (int k = 0; k < digit; k++)
 				temp *= current % 10;
-			}
 			sum += temp;
 			current /= 10;
 		}
 		
-		if (sum == i){
+		if (sum == i) {
 			exist = 1;
 			cout << sum << " ";
 		}
 	}
 	
-	if (exist == 0){
+	if (!exist)
 		cout << "none";
-	}
 	
 	return 0;
 }
