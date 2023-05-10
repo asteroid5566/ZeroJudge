@@ -7,9 +7,9 @@ int count, n, k, p[50000];
 
 bool test(int range)
 {
-	int i, curr = p[0] + range, count = 1;
+	int i, curr = 0, count = 0;
 	
-	for (i = 1; i < n; i++) {
+	for (i = 0; i < n; i++) {
 		if (p[i] <= curr)
 			continue;
 		
