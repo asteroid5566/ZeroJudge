@@ -1,7 +1,5 @@
 // https://zerojudge.tw/ShowProblem?problemid=e447 
 #include <iostream>
-#include <set>
-#include <map>
 using namespace std;
 
 int arr[1000001];
