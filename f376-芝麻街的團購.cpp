@@ -30,7 +30,7 @@ int main()
 		for (i = 0; i < n; i++)
 			sum += abs(arr[i] - p);
 		if (sum < min)
-			idx = n / 2 - 1;
+			idx = n / 2;
 	}
 	
 	cout << arr[idx];
